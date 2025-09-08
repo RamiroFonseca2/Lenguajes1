@@ -1,0 +1,25 @@
+-  Ramiro Fonseca
+-  Lenguajes
+-  Universidad Católica de La Plata
+-  2/9/2025
+-  A continuación voy a dar mi explicación de como funciona el programa piedra_papel_tijeraV2.py line por linea y como lo ejecuté:
+  
+-  Primeramente importamos la libreria "random" para poder usarla luego en la eleccion al azar de piedra, papel o tijera
+-  Cargamos una lista con las posibles opciones que puede elegir el usuario
+-  Carga de proceso "ValidarResultado" que hace la validacion por fuera del programa principal y devuelve true o false en caso que corresponda
+-  Inicializacmos varialbes tales como "ronda_totales" que alamcena el valor de "el mejor de" y "rondas_ganar" que almacena el valor que necesita un jugador para ser "inalcanzable"
+-  Inicia el While, como condición que (la ronda actual sea <= a las rondas totales) 
+-    Dentro del while
+-    Le pide ingresar una opción al usuario
+-    Si esta dentro de las opciones cargadas en la lista al principio del código, sigue. Sino arroja cartel de "Entrada no valida" y pide volver a cargar, sin sumar la ronda
+-    Luego "elije" una opción la pc
+-    Si son iguales resta una ronda, ya que luego va a ser sumada. #Habian dos opciones para hacerlo, la primera era asi y la segunda era que se sumen cuando gana y cuando pierde, es lo mismo, cumple con el enunciado.
+-    Sino valida los resultados
+-    si gano el usuario, suma 1 a los puntos del usuario y chequea si son los puntos necesarios para ganar, si los son rompe el while e imprime
+-    sino
+-    suma punto a la pc y chequea si son los puntos necesarios para ganar, si los son rompe el while e imprime
+-    Suma y pasa a la siguiente ronda. En este caso si empata suma, pero ya se resto dentro del if del empate
+-    Una vez, el while sea cortado por alguno de los resultados ganadores o se lleguen a 5 rondas con resultado
+-    Fuera del while muestra los resultados y compara los puntos finales, el que tiene mas gana y lo muestra en pantalla
+
+-    En mi caso para compilé y edité el código por medio de Visual Studio Code, descargando Python 3.11 en mi PC e instalando las extensiones de Visual Studio para poder procesar python, luego aplicamos las configuraciones necesarias para ejecutar python en la terminal de visual studio. Para correrlo simplemente descárguelo presione clic derecho, abrir con... y seleccione Python, si lo tiene instalado.
