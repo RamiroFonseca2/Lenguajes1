@@ -46,5 +46,3 @@ if puntos_usuario > puntos_pc:
     print("¡Ganaste el juego! 🎉")
 elif puntos_usuario < puntos_pc:
     print("La computadora ganó el juego.")
-else:
-    print("Empate total.")
